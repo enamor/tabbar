@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B85A30CB1E5EC7E800C43458 /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B85A30CA1E5EC7E800C43458 /* CustomTabBar.m */; };
-		B85A30CE1E5EC82000C43458 /* atbb.m in Sources */ = {isa = PBXBuildFile; fileRef = B85A30CD1E5EC82000C43458 /* atbb.m */; };
 		B86582111C11A2D80062C831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B86582101C11A2D80062C831 /* main.m */; };
 		B86582141C11A2D80062C831 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B86582131C11A2D80062C831 /* AppDelegate.m */; };
 		B86582171C11A2D80062C831 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86582161C11A2D80062C831 /* ViewController.m */; };
 		B865821A1C11A2D80062C831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86582181C11A2D80062C831 /* Main.storyboard */; };
 		B865821C1C11A2D80062C831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B865821B1C11A2D80062C831 /* Assets.xcassets */; };
 		B865821F1C11A2D80062C831 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B865821D1C11A2D80062C831 /* LaunchScreen.storyboard */; };
+		B8B6E42F1E606E550006BCF3 /* UIView+ext.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B6E42E1E606E550006BCF3 /* UIView+ext.m */; };
+		B8B6E4321E606F320006BCF3 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B6E4311E606F320006BCF3 /* MyView.m */; };
 		B8FB8D961E5166BD00D773F5 /* RootBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB8D951E5166BD00D773F5 /* RootBarViewController.m */; };
 		B8FB8D9A1E51671D00D773F5 /* BaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB8D991E51671D00D773F5 /* BaseNavController.m */; };
 		B8FB8DA61E5167B800D773F5 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB8D9D1E5167B800D773F5 /* ContactsViewController.m */; };
@@ -28,8 +29,6 @@
 /* Begin PBXFileReference section */
 		B85A30C91E5EC7E800C43458 /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
 		B85A30CA1E5EC7E800C43458 /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
-		B85A30CC1E5EC82000C43458 /* atbb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atbb.h; sourceTree = "<group>"; };
-		B85A30CD1E5EC82000C43458 /* atbb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = atbb.m; sourceTree = "<group>"; };
 		B865820C1C11A2D80062C831 /* SystemTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SystemTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86582101C11A2D80062C831 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B86582121C11A2D80062C831 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +39,10 @@
 		B865821B1C11A2D80062C831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B865821E1C11A2D80062C831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B86582201C11A2D80062C831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8B6E42D1E606E550006BCF3 /* UIView+ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ext.h"; sourceTree = "<group>"; };
+		B8B6E42E1E606E550006BCF3 /* UIView+ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ext.m"; sourceTree = "<group>"; };
+		B8B6E4301E606F320006BCF3 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		B8B6E4311E606F320006BCF3 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		B8FB8D941E5166BD00D773F5 /* RootBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootBarViewController.h; sourceTree = "<group>"; };
 		B8FB8D951E5166BD00D773F5 /* RootBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootBarViewController.m; sourceTree = "<group>"; };
 		B8FB8D981E51671D00D773F5 /* BaseNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavController.h; sourceTree = "<group>"; };
@@ -72,6 +75,10 @@
 		B86582031C11A2D80062C831 = {
 			isa = PBXGroup;
 			children = (
+				B8B6E4301E606F320006BCF3 /* MyView.h */,
+				B8B6E4311E606F320006BCF3 /* MyView.m */,
+				B8B6E42D1E606E550006BCF3 /* UIView+ext.h */,
+				B8B6E42E1E606E550006BCF3 /* UIView+ext.m */,
 				B865820E1C11A2D80062C831 /* SystemTabBar */,
 				B865820D1C11A2D80062C831 /* Products */,
 			);
@@ -120,8 +127,6 @@
 				B85A30CA1E5EC7E800C43458 /* CustomTabBar.m */,
 				B8FB8D941E5166BD00D773F5 /* RootBarViewController.h */,
 				B8FB8D951E5166BD00D773F5 /* RootBarViewController.m */,
-				B85A30CC1E5EC82000C43458 /* atbb.h */,
-				B85A30CD1E5EC82000C43458 /* atbb.m */,
 			);
 			path = TabBarController;
 			sourceTree = "<group>";
@@ -231,8 +236,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B85A30CE1E5EC82000C43458 /* atbb.m in Sources */,
 				B8FB8DA91E5167B800D773F5 /* MeViewController.m in Sources */,
+				B8B6E42F1E606E550006BCF3 /* UIView+ext.m in Sources */,
 				B86582171C11A2D80062C831 /* ViewController.m in Sources */,
 				B8FB8DAE1E5167E300D773F5 /* BaseViewController.m in Sources */,
 				B8FB8DA61E5167B800D773F5 /* ContactsViewController.m in Sources */,
@@ -244,6 +249,7 @@
 				B8FB8D961E5166BD00D773F5 /* RootBarViewController.m in Sources */,
 				B86582111C11A2D80062C831 /* main.m in Sources */,
 				B8FB8DA81E5167B800D773F5 /* HomeViewController.m in Sources */,
+				B8B6E4321E606F320006BCF3 /* MyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

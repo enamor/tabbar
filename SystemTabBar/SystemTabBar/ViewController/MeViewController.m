@@ -7,6 +7,8 @@
 //
 
 #import "MeViewController.h"
+#import "UIView+ext.h"
+#import "MyView.h"
 
 @interface MeViewController ()
 
@@ -16,6 +18,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIView *view1 = [[UIView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:view1];
+    
+    UIView *view2 = [[UIView alloc] initWithFrame:view1.bounds];
+    [view1 addSubview: view2];
+    view2.backgroundColor = [UIColor blueColor];
+    
+    [view2 addSubview:[[MyView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)]];
+    
     // Do any additional setup after loading the view.
 }
 

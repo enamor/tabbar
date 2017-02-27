@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "MyView.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.view addSubview:[[MyView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)]];
 }
 
 - (void)didReceiveMemoryWarning {
