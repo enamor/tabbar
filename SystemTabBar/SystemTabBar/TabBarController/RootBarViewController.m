@@ -82,8 +82,11 @@
         BaseNavController *nav = [[BaseNavController alloc] initWithRootViewController:vc];
         UITabBarItem *item = nav.tabBarItem;
         item.title = dict[kTitleKey];
-        item.image = [UIImage imageNamed:dict[kImgKey]];
+        item.image = [[UIImage imageNamed:dict[kImgKey]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         item.selectedImage = [[UIImage imageNamed:dict[kSelImgKey]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        //title间距
+        item.titlePositionAdjustment = UIOffsetMake(0, -2);
+        item.imageInsets = UIEdgeInsetsMake(-2, 0, 2, 0);
         
         [item setTitleTextAttributes:@{NSForegroundColorAttributeName : kThemeColor} forState:UIControlStateSelected];
         [self addChildViewController:nav];
