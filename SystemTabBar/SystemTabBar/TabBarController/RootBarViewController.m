@@ -51,6 +51,17 @@
     //阴影
     self.tabBar.layer.shadowOpacity = 0.15;
     
+    //改变tabbar 线条颜色
+    CGRect rect = CGRectMake(0, 0, self.tabBar.frame.size.width, 1);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context,[UIColor redColor].CGColor);
+    CGContextFillRect(context, rect);
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    [self.tabBar setShadowImage:img];
+    [self.tabBar setBackgroundImage:[[UIImage alloc]init]];
+    
 }
 
 - (void)p_setupSubviews {
@@ -88,6 +99,9 @@
         item.titlePositionAdjustment = UIOffsetMake(0, -2);
         item.imageInsets = UIEdgeInsetsMake(-2, 0, 2, 0);
         
+        //默认状态下文字颜色
+//        [item setTitleTextAttributes:@{NSForegroundColorAttributeName : kThemeColor} forState:UIControlStateNormal];
+        //选中状态下文字颜色
         [item setTitleTextAttributes:@{NSForegroundColorAttributeName : kThemeColor} forState:UIControlStateSelected];
         [self addChildViewController:nav];
     }];
