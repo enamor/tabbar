@@ -104,6 +104,7 @@
         //选中状态下文字颜色
         [item setTitleTextAttributes:@{NSForegroundColorAttributeName : kThemeColor} forState:UIControlStateSelected];
         [self addChildViewController:nav];
+        
     }];
     self.selectedIndex = 1;
 
